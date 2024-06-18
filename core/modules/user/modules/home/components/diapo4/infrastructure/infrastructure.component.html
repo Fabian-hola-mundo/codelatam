@@ -1,0 +1,20 @@
+<img [src]="images[imageNumber]" alt="" class="baaac back" />
+<div class="mini">
+  <div class="mini__images">
+    <img
+      (click)="changeDiapo(i)"
+      *ngFor="let image of images; let i = index"
+      [src]="image"
+      [alt]="image"
+      [ngStyle]="{ opacity: i === imageNumber ? '1' : '' }"
+    />
+    <h1>{{ imageNumber + 1 }}/{{ images.length }}</h1>
+  </div>
+  <h1
+    class="text-image"
+    *ngFor="let phrase of phrases; let i = index"
+    [ngStyle]="{ display: i === imageNumber ? 'flex' : 'none' }"
+  >
+    {{ phrase }}
+  </h1>
+</div>

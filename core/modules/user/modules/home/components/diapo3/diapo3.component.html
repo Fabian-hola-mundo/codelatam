@@ -1,0 +1,24 @@
+<div
+  class="image"
+  #image
+  [ngStyle]="{ 'background-image': 'url(' + activeImageBack + ')' }"
+>
+  <img [src]="activeImageFront" />
+  <div class="phrase-container">
+    <div class="phrase-container__phrase">
+      <h1>{{ activePhrase }}</h1>
+    </div>
+  </div>
+  <div class="icons">
+    <img
+      *ngFor="let item of imagesFront; let i = index"
+      matRipple
+      [src]="item"
+      (click)="changeIndex(i)"
+      [ngStyle]="{
+        border: i === currentIndex ? '3px solid transparent' : '',
+        opacity: i === currentIndex ? '1': '0.2'
+      }"
+    />
+  </div>
+</div>

@@ -1,0 +1,107 @@
+@import '../../../../src/styles.scss';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & .backColor {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    & .circle {
+      width: 340px;
+      height: 340px;
+      position: absolute;
+      border-radius: 300px;
+    }
+    & .circle1 {
+      background-color: rgba(#FFCD00, 0.5);
+      bottom: -5%;
+      left: -5%;
+      animation-name: circle1;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+
+    }
+    & .circle2 {
+      background-color: rgba(#003786, 0.6);
+      top: -10%;
+      right: 20%;
+      filter: blur(120px);
+      animation-name: circle2;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+    & .circle3 {
+      background-color: rgba(#D13C46, 0.8);
+      bottom: -5%;
+      right: -5%;
+      filter: blur(190px);
+      animation-name: circle3;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+  }
+}
+
+
+@keyframes circle1 {
+  0% {
+    bottom: -5%;
+    left: -5%;
+    filter: blur(50px);
+  }
+  50% {
+    bottom: 90%;
+    left: -5%;
+    filter: blur(100px);
+  }
+  100% {
+    bottom: -5%;
+    left: -5%;
+    filter: blur(50px);
+  }
+}
+
+@keyframes circle2 {
+  0% {
+    top: -10%;
+    right: 20%;
+    filter: blur(120px);
+  }
+  50% {
+    top: -20%;
+    right: 70%;
+    filter: blur(170px);
+  }
+  100% {
+    top: -10%;
+    right: 20%;
+    filter: blur(120px);
+  }
+}
+
+@keyframes circle3 {
+  0% {
+    bottom: -5%;
+    right: -5%;
+    filter: blur(190px);
+  }
+  50% {
+    bottom: 20%;
+    right: -5%;
+    filter: blur(210px);
+  }
+  100% {
+    bottom: -5%;
+    right: -5%;
+    filter: blur(190px);
+  }
+}

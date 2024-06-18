@@ -1,0 +1,31 @@
+<section class="diapo-0" *ngIf="diapo === 0">
+  <div class="text">
+    <h1>
+      Nothing for war
+      <br />
+      For education <span>everything</span>
+    </h1>
+  </div>
+  <img src="assets/images/buildFront.png" alt="" class="baaac front" />
+  <img src="assets/images/buildBack.png" alt="" class="baaac back" />
+</section>
+<section class="diapo-1" *ngIf="diapo === 1">
+  <app-infrastructure></app-infrastructure>
+</section>
+<section class="diapo-2" *ngIf="diapo === 2">
+  <app-hr></app-hr>
+</section>
+<section class="diapo-3" *ngIf="diapo === 3">
+  <app-education></app-education>
+</section>
+<section class="diapo-4" *ngIf="diapo === 4">
+  <app-marketing></app-marketing>
+</section>
+<section class="diapo-5" *ngIf="diapo === 5">
+  <app-development></app-development>
+</section>
+<section class="diapo-6" *ngIf="diapo === 6">
+  <app-logistic></app-logistic>
+</section>
+
+<app-vision (changeDiapoStepEmitter)="changeDiapo($event)"></app-vision>

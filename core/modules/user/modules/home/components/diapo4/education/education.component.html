@@ -1,0 +1,11 @@
+<img src="assets/images/education/kids.jpg" alt="">
+<div class="types">
+  <div class="body">
+    <div class="education-data" *ngFor="let data of educationData">
+      <h2>{{data.macroName}}</h2>
+      <div class="education-data__sub-item" *ngFor="let subItem of data.subItems">
+        <p>{{subItem}}</p>
+      </div>
+    </div>
+  </div>
+</div>

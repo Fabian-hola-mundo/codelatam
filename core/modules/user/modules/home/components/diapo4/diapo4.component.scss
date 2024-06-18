@@ -1,0 +1,136 @@
+:host {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  display: flex;
+
+  &:hover {
+    & app-vision {
+      transform: translateY(120px);
+      &:hover {
+        transition: all 400ms ease-in-out 200ms;
+        transform: translateY(0px);
+      }
+    }
+  }
+
+  & app-vision {
+    position: absolute;
+    z-index: 5;
+    transform: translateY(170px);
+    transition: all 400ms ease-in-out 1200ms;
+  }
+
+  section {
+    margin: 0;
+  }
+  & .diapo-0 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    .text {
+      $padding: 24px;
+      background-color: transparent;
+      position: absolute;
+      width: 100%;
+      height: 20%;
+      padding: $padding;
+      padding-top: $padding * 2;
+      z-index: 1;
+      background: linear-gradient(180deg, #00000048 0%, #00000000 100%);
+      transition: all 300ms ease-in-out;
+      & h1 {
+        text-align: center;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 100px;
+        line-height: 80px;
+        color: white;
+        opacity: 0;
+        & span {
+          background: linear-gradient(110deg, #7890e6 2.32%, #8a37c9 97.46%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          color: transparent;
+          opacity: 0;
+        }
+      }
+    }
+    & .baaac {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    & .back {
+      z-index: 0;
+      transition: all 300ms;
+    }
+    & .front {
+      z-index: 2;
+      transition: all 300ms;
+    }
+    &:hover {
+      & .text {
+        height: 80%;
+        background: linear-gradient(180deg, #000000 0%, #00000000 100%);
+        & h1 {
+          animation: zoomin 400ms;
+          animation-iteration-count: unset;
+          animation-direction: normal;
+          animation-fill-mode: forwards;
+          animation-delay: 400ms;
+          & span {
+            animation: zoomin 400ms;
+            animation-delay: 900ms;
+            animation-fill-mode: forwards;
+          }
+        }
+      }
+      & .front {
+        transform: scale(1.2) translateY(-10px);
+      }
+      & .back {
+        filter: blur(4px);
+        transform: scale(1.05);
+      }
+    }
+  }
+  & .diapo-1 {
+
+  }
+}
+
+@keyframes zoomin {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes destello {
+  0% {
+    opacity: 0.4;
+    transition: all 200ms ease-in-out;
+  }
+  50% {
+    opacity: 0.7;
+    transition: all 200ms ease-in-out;
+  }
+  100% {
+    opacity: 0.4;
+    transition: all 200ms ease-in-out;
+  }
+}

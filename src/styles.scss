@@ -1,0 +1,88 @@
+
+@import "./styles/base";
+@import "./styles/tokens/tokens";
+@import "./styles/tokens/colors.module";
+@import "./styles/tokens/typography.module";
+@import "./styles/tokens/theme.dark";
+@import "./styles/tokens/theme.light";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  filter: contrast(140%) brightness(100%);
+  animation: background 20s infinite ease-in-out; /* Duración extendida para una transición más suave */
+  background:
+  linear-gradient(120deg, #dcdced, #e4eeef9b),
+  url(./assets/textures/grain.svg);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+  @extend .on-primary-container-text;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500 !important;
+}
+
+p,
+b,
+strong
+ul,
+li,
+td {
+  margin: 0 !important;
+  color: var(--md-ref-palette-neutral-variant40);
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  @extend .display-large;
+}
+
+h2 {
+  @extend .headline-large;
+}
+
+h3 {
+  @extend .headline-medium;
+  line-height: normal;
+}
+
+h6 {
+  @extend .title-small;
+  line-height: normal;
+};
+
+.fill-svg {
+  @extend .primary-fill;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
