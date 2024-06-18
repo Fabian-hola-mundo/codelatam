@@ -11,5 +11,6 @@ import { CommonModule } from '@angular/common';
 export class EducationComponent {
 
   educationData = EDUCATION2
+  hola= 'hola'
 
 }
