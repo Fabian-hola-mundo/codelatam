@@ -1,16 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatRippleModule } from '@angular/material/core';
 import { RouterModule } from '@angular/router';
-import * as THREE from 'three';
-import { GLTFLoader, ThreeMFLoader } from 'three-stdlib';
 import { RenderComponent } from '../render/render.component';
 import { Diapo3Component } from '../diapo3/diapo3.component';
 import { DiapositiveService } from '../../../../../../services/diapositive.service';
 import { Diapo4Component } from '../diapo4/diapo4.component';
 import { Diapo5Component } from '../diapo5/diapo5.component';
+import {AppTranslateModule} from "../../../../../../../src/app/trasnlate.module";
+import {TranslateService} from "@ngx-translate/core";
 
 export interface CARDDIAPO1 {
   name: string,
@@ -32,8 +32,8 @@ export class AboveTheFoldComponent {
   test = ''
 
   diapositive : any
-  next: any
   cardOnDiapositive1?: CARDDIAPO1
+
   defaultImages = [
     'assets/images/violenciaSkelet.png',
     'assets/images/fullover.png'
@@ -45,10 +45,17 @@ export class AboveTheFoldComponent {
     });
   }
 
+
   constructor(
-    private diapoService: DiapositiveService
+    private diapoService: DiapositiveService,
+    private translate: TranslateService
   ){
+    const storedLang = localStorage.getItem('language');
+    const defaultLang = storedLang || 'en';
+    translate.setDefaultLang(defaultLang);
+    translate.use(defaultLang);
   }
+
 
   nextDiapositive() {
     this.diapoService.nextDiapositive();
@@ -61,8 +68,8 @@ export class AboveTheFoldComponent {
 
   cardsDiapositive1 : CARDDIAPO1 [] = [
     {
-      name: 'Violence',
-      departaments: 'Nariño, Cauca, Chocó, Valle del Cauca, Bolívar, Norte de Santander, Risaralda, Magdalena, Córdoba, Putumayo, Arauca y Antioquia',
+      name: this.translate.instant('cardsViolenceTitle'),
+      departaments: this.translate.instant('cardsViolenceDepartment'),
       images: [
         'assets/images/violenciaSkelet.png',
         'assets/images/violenciaOver.png'

@@ -24,7 +24,7 @@
           <div
             class="cards"
             matRipple
-            *ngFor="let card of cardsDiapositive1; let i; as: index"
+            *ngFor="let card of cardsDiapositive1; let i = index"
             (click)="setCardOnHover(card)"
             [ngClass]="{ active: card === cardOnDiapositive1 }"
           >
