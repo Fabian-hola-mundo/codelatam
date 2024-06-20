@@ -1,8 +1,8 @@
-import {Component, NgModule} from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
-import {TranslateService} from "@ngx-translate/core";
-import {AppTranslateModule} from "./trasnlate.module";
+import { TranslateService } from '@ngx-translate/core';
+import { AppTranslateModule } from './trasnlate.module';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +14,6 @@ import {AppTranslateModule} from "./trasnlate.module";
 export class AppComponent {
   title = 'initiative-w';
 
-
   constructor(private translate: TranslateService) {
     const storedLang = localStorage.getItem('language');
     const defaultLang = storedLang || 'en';
@@ -25,6 +24,6 @@ export class AppComponent {
   switchLanguage(language: string) {
     this.translate.use(language);
     localStorage.setItem('language', language);
-    window.location.reload()
+    window.location.reload();
   }
 }

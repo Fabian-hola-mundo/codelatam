@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import {TranslateService} from "@ngx-translate/core";
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-vision',
@@ -15,11 +15,7 @@ export class VisionComponent {
   @Input() diapoStep = 0;
   @Output() changeDiapoStepEmitter = new EventEmitter<number>();
 
-
-  constructor(
-    private translate: TranslateService,
-  ) {
-  }
+  constructor(private translate: TranslateService) {}
 
   buttons = [
     this.translate.instant('vision'),

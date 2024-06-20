@@ -30,19 +30,17 @@ export interface CARDDIAPO1 {
     Diapo3Component,
     Diapo4Component,
     Diapo5Component,
-
   ],
   templateUrl: './above.the.fold.component.html',
   styleUrls: ['./above.scss'],
 })
-export class AboveTheFoldComponent  implements OnInit {
+export class AboveTheFoldComponent implements OnInit {
   test = '';
 
-  text= {
+  text = {
     challenge: this.translate.instant('challenges'),
     forgeTitle: this.translate.instant('forgeTitle'),
   };
-
 
   diapositive: any;
   cardOnDiapositive1?: CARDDIAPO1;
@@ -61,8 +59,7 @@ export class AboveTheFoldComponent  implements OnInit {
   constructor(
     private diapoService: DiapositiveService,
     private translate: TranslateService,
-  ) {
-  }
+  ) {}
 
   nextDiapositive() {
     this.diapoService.nextDiapositive();
@@ -71,7 +68,6 @@ export class AboveTheFoldComponent  implements OnInit {
   setCardOnHover(index: CARDDIAPO1) {
     this.cardOnDiapositive1 = index;
   }
-
 
   cardsDiapositive1: CARDDIAPO1[] = [
     {
@@ -92,8 +88,7 @@ export class AboveTheFoldComponent  implements OnInit {
     },
     {
       name: this.translate.instant('cardsEducationTitle'),
-      departaments:
-        this.translate.instant('cardsEducationDepartment'),
+      departaments: this.translate.instant('cardsEducationDepartment'),
       images: [
         'assets/images/violenciaSkelet.png',
         'assets/images/bajoLogroEducativoOver.png',

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {TranslateService} from "@ngx-translate/core";
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-diapo5',
@@ -9,14 +9,12 @@ import {TranslateService} from "@ngx-translate/core";
   styleUrl: './diapo5.component.scss',
 })
 export class Diapo5Component {
-  constructor(private traslate: TranslateService) {
-  }
+  constructor(private traslate: TranslateService) {}
 
   texts = {
     goal: this.traslate.instant('goals'),
     goalEducation: this.traslate.instant('goalEducation'),
     goalMeasures: this.traslate.instant('goalMeasures'),
     goalIndustry: this.traslate.instant('goalIndustry'),
-  }
-
+  };
 }

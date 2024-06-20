@@ -1,7 +1,7 @@
 {
-  "noWar":"Nothing for war",
+  "noWar": "Nothing for war",
   "torEducation": "For education",
-  "everything" : "everything",
+  "everything": "everything",
 
   "ourChilds": "OUR CHILDS",
   "goals": "GOALS",
@@ -83,5 +83,4 @@
   "goalMeasures": "Measure and improve socioeconomic impact",
   "goalIndustry": "Establish links with the technology industry",
   "goalEducation": "Quality technological education"
-
 }

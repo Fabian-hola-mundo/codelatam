@@ -171,7 +171,6 @@ export const EDUCATION2 = [
       'schoolOfLevelingItems.emotional',
       'schoolOfLevelingItems.guidance',
       'schoolOfLevelingItems.diversity',
-
     ],
   },
   {

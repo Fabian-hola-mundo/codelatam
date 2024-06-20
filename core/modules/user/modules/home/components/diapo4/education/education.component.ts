@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { EDUCATION2 } from './education.json';
 import { CommonModule } from '@angular/common';
-import {TranslateService} from "@ngx-translate/core";
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-education',
   standalone: true,
@@ -17,11 +17,7 @@ export class EducationComponent {
         return this.translate.instant(subItem);
       }),
     };
-
   });
 
-
-  constructor( private translate: TranslateService) {
-  }
-
+  constructor(private translate: TranslateService) {}
 }

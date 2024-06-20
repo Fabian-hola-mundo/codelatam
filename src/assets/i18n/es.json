@@ -1,7 +1,7 @@
 {
-  "noWar":"Nada para la guerra",
+  "noWar": "Nada para la guerra",
   "torEducation": "Por la educación",
-  "everything" : "todo",
+  "everything": "todo",
 
   "ourChilds": "NUESTROS NIÑOS",
   "goals": "METAS",
@@ -42,7 +42,6 @@
     "competencies": "Competencias globales",
     "wellbeing": "Desarrollo personal y bienestar"
   },
-
 
   "schoolsOfBeing": "Escuelas del ser",
   "schoolsOfBeingItems": {

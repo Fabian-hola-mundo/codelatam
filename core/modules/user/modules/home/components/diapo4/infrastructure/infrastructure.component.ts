@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import {TranslateService} from "@ngx-translate/core";
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-infrastructure',
@@ -10,13 +10,7 @@ import {TranslateService} from "@ngx-translate/core";
   styleUrls: ['./infrastructure.component.scss'],
 })
 export class InfrastructureComponent {
-
-  constructor(
-    private translate: TranslateService,
-  ) {
-  }
-
-
+  constructor(private translate: TranslateService) {}
 
   imageNumber: any = 0;
 
@@ -40,7 +34,6 @@ export class InfrastructureComponent {
     this.translate.instant('mechatronicsLabs'),
     this.translate.instant('greenAreas'),
     this.translate.instant('lounge'),
-
   ];
 
   public changeDiapo(i: any) {

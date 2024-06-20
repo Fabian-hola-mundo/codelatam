@@ -8,7 +8,7 @@ import { HrComponent } from './hr/hr.component';
 import { MarketingComponent } from './marketing/marketing.component';
 import { DevelopmentComponent } from './development/development.component';
 import { LogisticComponent } from './logistic/logistic.component';
-import {TranslateService} from "@ngx-translate/core";
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-diapo4',
@@ -30,14 +30,17 @@ import {TranslateService} from "@ngx-translate/core";
 export class Diapo4Component {
   diapo: number = 0;
 
-  text= {
-    noWar :this.translate.instant('noWar'),
+  text = {
+    noWar: this.translate.instant('noWar'),
     torEducation: this.translate.instant('torEducation'),
-    everything: this.translate.instant('everything')
-  }
+    everything: this.translate.instant('everything'),
+  };
 
   bodyElement = this.renderer.selectRootElement('body', true);
-  constructor(private renderer: Renderer2, private translate: TranslateService ) {}
+  constructor(
+    private renderer: Renderer2,
+    private translate: TranslateService,
+  ) {}
 
   ngOnInit(): void {
     this.updateBackgroundImage(this.bodyElement);
