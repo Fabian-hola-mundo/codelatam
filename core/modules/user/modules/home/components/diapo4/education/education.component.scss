@@ -7,7 +7,7 @@
   & img {
     border-radius: 12px;
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
   }
   & .types {
@@ -16,24 +16,57 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
+      &:hover > :not(:hover) {
+        opacity: 0.3;
+        height: 50px;
+      }
       & .education-data {
         box-shadow: 0 4px 12px rgba(0,0,0,0.17);
-        background-color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.5);
         border-radius: 4px;
         padding: 12px;
         width: 100%;
         flex-grow: 1;
         flex-basis: 450px;
         transition: all 200ms;
+        display: flex;
+        gap: 12px;
+        height: 140px;
+        overflow: hidden;
+        flex-direction: column;
+        outline: 2px solid rgba(#4E0984, 0.2);
+        transition: all 400ms ease-in-out;
+        & h2 {
+          font-weight: 700;
+          transition: all 400ms ease-in-out;
+          color: #4E0984;
+          border-bottom: 1px solid rgba(#4E0984,0.3);
+        }
+        cursor: pointer;
+        &:hover > :not(:hover) {
+          opacity: 0.9;
+        }
         &:hover {
-          background-color: rgb(204, 204, 204);
+          height: fit-content;
+          background-color: rgb(255, 255, 255);
           box-shadow: 0 12px 12px rgba(0,0,0,0.27);
           transform: translateY(-12px);
+          outline: 2px solid #4E0984;
+          & h2 {
+            border-bottom: 1px solid rgba(#4E0984, 1 );
+          }
+          &__sub-item {
+          }
+          & > :hover {
+            opacity: 1;
+            color: #4E0984;
+          }
         }
+
         &__sub-item {
           width: 100%;
           flex-grow: 1;
-          flex-basis: 400px;
+          flex-basis: 510px;
         }
       }
     }

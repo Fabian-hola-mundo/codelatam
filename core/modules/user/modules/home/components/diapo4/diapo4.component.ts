@@ -27,7 +27,7 @@ import { LogisticComponent } from './logistic/logistic.component';
   styleUrls: ['./diapo4.component.scss'],
 })
 export class Diapo4Component {
-  diapo: number = 0;
+  diapo: number = 4;
 
   bodyElement = this.renderer.selectRootElement('body', true);
   constructor(private renderer: Renderer2) {}

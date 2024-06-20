@@ -21,6 +21,8 @@ export class InfrastructureComponent {
     'assets/images/places/lab2-min.jpg',
     'assets/images/places/verde-min.jpg',
     'assets/images/places/work-min.jpg',
+    'assets/images/places/tennis.jpg',
+    'assets/images/places/basketball.jpg',
   ];
 
   phrases = [
@@ -32,6 +34,8 @@ export class InfrastructureComponent {
     'Mechatronics Labs',
     'Green Areas',
     'Lounge',
+    'Deportive areas',
+    'Coliseum',
   ];
 
   public changeDiapo(i: any) {

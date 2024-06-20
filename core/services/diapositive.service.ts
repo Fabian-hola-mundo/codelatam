@@ -5,7 +5,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class DiapositiveService {
-  private diapositiveNumberSubject = new BehaviorSubject<number>(0);
+  private diapositiveNumberSubject = new BehaviorSubject<number>(3);
   diapositiveNumber$ = this.diapositiveNumberSubject.asObservable();
 
   constructor() { }

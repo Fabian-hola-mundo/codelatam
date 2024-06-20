@@ -16,9 +16,9 @@ export class VisionComponent {
 
   buttons = [
     'THE VISION',
-    'INFRASTRUCTURE',
-    'HR',
     'EDUCATION',
+    'HR',
+    'INFRASTRUCTURE',
     'MARKETING',
     'GROWTH',
     'LOGISTICS'

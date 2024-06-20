@@ -1,1 +1,27 @@
-<p>marketing works!</p>
+<div class="first-page">
+  <h1>Marketing</h1>
+</div>
+<div class="options">
+  <div class="options__goals">
+    <h2>Goals</h2>
+    <ul>
+      <li *ngFor="let goal of goals" class="container">
+        <h3>{{goal.title}}</h3>
+        <ul>
+          <li *ngFor="let bullet of goal.bullets ">{{bullet}}</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="options__strategys">
+    <h2>Strategys</h2>
+    <ul>
+      <li *ngFor="let strategy of strategys" class="container">
+        <h3>{{strategy.title}}<!--   <mat-icon>arrow_drop_down</mat-icon> --></h3>
+        <ul>
+          <li *ngFor="let bullet of strategy.bullets ">{{bullet}}</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
