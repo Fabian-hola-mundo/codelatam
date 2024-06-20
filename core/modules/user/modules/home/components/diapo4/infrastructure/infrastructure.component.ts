@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-infrastructure',
@@ -9,6 +10,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./infrastructure.component.scss'],
 })
 export class InfrastructureComponent {
+
+  constructor(
+    private translate: TranslateService,
+  ) {
+  }
+
+
+
   imageNumber: any = 0;
 
   images = [
@@ -23,14 +32,15 @@ export class InfrastructureComponent {
   ];
 
   phrases = [
-    'Classroom',
-    'Cafeteria',
-    'Dormitories',
-    'Gymnasium',
-    'Technology Labs',
-    'Mechatronics Labs',
-    'Green Areas',
-    'Lounge',
+    this.translate.instant('classroom'),
+    this.translate.instant('cafeteria'),
+    this.translate.instant('dormitories'),
+    this.translate.instant('gymnasium'),
+    this.translate.instant('technologyLabs'),
+    this.translate.instant('mechatronicsLabs'),
+    this.translate.instant('greenAreas'),
+    this.translate.instant('lounge'),
+
   ];
 
   public changeDiapo(i: any) {

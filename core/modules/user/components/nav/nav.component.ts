@@ -5,6 +5,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
 import { DiapositiveService } from '../../../../services/diapositive.service';
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'bel-nav',
@@ -73,11 +74,13 @@ export class NavComponent {
 
   sections: string[] = [
     'CODELATAM',
-    'CHALLENGES',
-    'OUR CHILDS',
-    'THE VISION',
-    'GOALS',
+    this.translate.instant('challengesVariant'),
+    this.translate.instant('ourChilds'),
+    this.translate.instant('vision'),
+    this.translate.instant('goals'),
   ];
+
+
   ngOnInit(): void {
     this.audioPlayer.nativeElement.volume = 0.1; // Ajusta el volumen
     this.diapoService.diapositiveNumber$.subscribe((number) => {
@@ -89,5 +92,5 @@ export class NavComponent {
     this.diapoService.setDiapositive(i);
   }
 
-  constructor(public diapoService: DiapositiveService) {}
+  constructor(public diapoService: DiapositiveService, private translate: TranslateService) {}
 }

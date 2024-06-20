@@ -1,4 +1,87 @@
 {
+  "noWar":"Nothing for war",
+  "torEducation": "For education",
+  "everything" : "everything",
+
+  "ourChilds": "OUR CHILDS",
+  "goals": "GOALS",
+  "challengesVariant": "CHALLENGES",
+
   "cardsViolenceTitle": "Violence",
-  "cardsViolenceDepartment": "Nariño, Cauca, Chocó, Valle del Cauca, Bolívar, Norte de Santander, Risaralda, Magdalena, Córdoba, Putumayo, Arauca and Antioquia"
+  "cardsViolenceDepartment": "Nariño, Cauca, Chocó, Valle del Cauca, Bolívar, Norte de Santander, Risaralda, Magdalena, Córdoba, Putumayo, Arauca and Antioquia",
+  "cardsPovertyTitle": "Multidimensional poverty",
+  "cardsPovertyDepartment": "Guajira, Vichada and Chocó among the poorest",
+  "cardsEducationTitle": "Low educational attainment",
+  "cardsEducationDepartment": "Boyacá and Norte de Santander within the departments with the lowest educational achievement",
+  "cardWeMustTitle": "We must change all of Latam",
+  "forgeTitle": "Forging the Technological Future of Latin America",
+  "challenges": "Challenges",
+
+  "vision": "THE VISION",
+  "infrastructure": "INFRASTRUCTURE",
+  "education": "EDUCATION",
+  "marketing": "MARKETING",
+  "growth": "GROWTH",
+  "logistics": "LOGISTICS",
+
+  "classroom": "Classroom",
+  "cafeteria": "Cafeteria",
+  "dormitories": "Dormitories",
+  "gymnasium": "Gymnasium",
+  "technologyLabs": "Technology Labs",
+  "mechatronicsLabs": "Mechatronics Labs",
+  "greenAreas": "Green Areas",
+  "lounge": "Lounge",
+
+  "schoolsKnowledge": "Schools of Knowledge",
+  "schoolsKnowledgeItems": {
+    "training": "Advanced Technical Training",
+    "innovation": "Entrepreneurship And Innovation",
+    "skills": "Management And Leadership Skills",
+    "ethics": "Business Culture And Professional Ethics",
+    "competencies": "Global Competencies",
+    "wellbeing": "Personal Development And Wellbeing"
+  },
+
+  "schoolsOfBeing": "Schools Of Being",
+  "schoolsOfBeingItems": {
+    "softSkills": "Soft Skills",
+    "responsibility": "Ethics And Social Responsibility",
+    "wellbeing": "Personal Development And Wellbeing",
+    "thinking": "Critical And Creative Thinking",
+    "culture": "Culture And Values"
+  },
+
+  "schoolOfLeveling": "School of Leveling",
+  "schoolOfLevelingItems": {
+    "mathematics": "Mathematics",
+    "comprehension": "Reading And Comprehension",
+    "communication": "Writing And Communication",
+    "sciences": "Sciences",
+    "literacy": "Technology And Digital Literacy",
+    "languages": "Languages",
+    "learning": "Study And Learning Skills",
+    "emotional": "Socio Emotional Skills",
+    "guidance": "Vocational And Professional Guidance",
+    "diversity": "Inclusion And Diversity"
+  },
+
+  "complementaryServices": "Complementary Services",
+  "complementaryServicesItems": {
+    "tutoring": "Academic Guidance And Tutoring",
+    "support": "Counseling And Psychological Support",
+    "development": "Academic Leveling And Development",
+    "resources": "Technological Support And Educational Resources",
+    "health": "Wellbeing And Health",
+    "guidance": "Vocational And Professional Guidance",
+    "financial": "Financial Support",
+    "programs": "Entrepreneurship And Innovation Programs",
+    "activities": "Cultural And Social Activities"
+  },
+
+  "goalsEducation": "Quality technological education",
+  "goalMeasures": "Measure and improve socioeconomic impact",
+  "goalIndustry": "Establish links with the technology industry",
+  "goalEducation": "Quality technological education"
+
 }

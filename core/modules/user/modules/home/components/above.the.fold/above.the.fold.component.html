@@ -3,16 +3,16 @@
     <div class="diapo diapo-0" *ngIf="diapositive === 0">
       <div class="text">
         <h1>Codelatam</h1>
-        <h3>Forging the Technological Future of Latin America</h3>
+        <h3>{{ text.forgeTitle }}</h3>
       </div>
 
-      <button mat-stroked-button (click)="nextDiapositive()">Challenges</button>
+      <button mat-stroked-button (click)="nextDiapositive()">{{ text.challenge }}</button>
     </div>
 
     <div class="diapo diapo-1" *ngIf="diapositive === 1">
       <div class="text">
         <div class="text__description">
-          <h1>Challenges</h1>
+          <h1>{{ text.forgeTitle}}</h1>
           <div>
             <h2>{{ cardOnDiapositive1?.name }}</h2>
             <p>{{ cardOnDiapositive1?.departaments }}</p>
