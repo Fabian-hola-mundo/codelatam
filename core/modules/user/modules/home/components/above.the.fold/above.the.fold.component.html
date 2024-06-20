@@ -3,18 +3,18 @@
     <div class="diapo diapo-0" *ngIf="diapositive === 0">
       <div class="text">
         <h1>Codelatam</h1>
-        <h3>Forging the Technological Future of Latin America</h3>
+        <h3>{{ text.forgeTitle }}</h3>
       </div>
 
       <button mat-stroked-button (click)="nextDiapositive()">
-        Challenges
+        {{ text.challenge }}
       </button>
     </div>
 
     <div class="diapo diapo-1" *ngIf="diapositive === 1">
       <div class="text">
         <div class="text__description">
-          <h1>Challenges</h1>
+          <h1>{{ text.forgeTitle }}</h1>
           <div>
             <h2>{{ cardOnDiapositive1?.name }}</h2>
             <p>{{ cardOnDiapositive1?.departaments }}</p>
@@ -24,7 +24,7 @@
           <div
             class="cards"
             matRipple
-            *ngFor="let card of cardsDiapositive1; let i; as: index"
+            *ngFor="let card of cardsDiapositive1; let i = index"
             (click)="setCardOnHover(card)"
             [ngClass]="{ active: card === cardOnDiapositive1 }"
           >
@@ -36,11 +36,21 @@
       <div class="map">
         <div class="map__container">
           <ng-container *ngIf="cardOnDiapositive1">
-            <img class="skelet" [src]="cardOnDiapositive1.images?.[0]" *ngIf="cardOnDiapositive1.images?.[0]" alt="" />
-            <img class="over" [src]="cardOnDiapositive1.images?.[1]" *ngIf="cardOnDiapositive1.images?.[1]" alt="" />
+            <img
+              class="skelet"
+              [src]="cardOnDiapositive1.images?.[0]"
+              *ngIf="cardOnDiapositive1.images?.[0]"
+              alt=""
+            />
+            <img
+              class="over"
+              [src]="cardOnDiapositive1.images?.[1]"
+              *ngIf="cardOnDiapositive1.images?.[1]"
+              alt=""
+            />
           </ng-container>
           <ng-container *ngIf="!cardOnDiapositive1">
-            <img class="skelet" [src]="defaultImages[0]"  alt="" />
+            <img class="skelet" [src]="defaultImages[0]" alt="" />
             <img class="over" [src]="defaultImages[1]" alt="" />
           </ng-container>
         </div>

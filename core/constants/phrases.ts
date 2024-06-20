@@ -7,4 +7,4 @@ export const PHRASES = [
   '¡Con fuerza y esperanza, wayú!',
   '¡Vamos con toda, paisano!',
   '¡Ánimo, parce!',
-]
+];

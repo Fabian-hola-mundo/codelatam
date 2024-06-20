@@ -1,8 +1,13 @@
 <nav>
   <mat-icon>arrow_upward</mat-icon>
   <div class="button-container">
-    <div [ngClass]="{active: i === diapoStep}" (click)="changeDiapoStep(i)" *ngFor="let button of buttons; let i = index" class="button">
-      <p>{{button}}</p>
+    <div
+      [ngClass]="{ active: i === diapoStep }"
+      (click)="changeDiapoStep(i)"
+      *ngFor="let button of buttons; let i = index"
+      class="button"
+    >
+      <p>{{ button }}</p>
     </div>
   </div>
 </nav>

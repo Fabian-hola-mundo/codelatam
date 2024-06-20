@@ -11,7 +11,9 @@
     flex-direction: column;
     padding: 16px 16px;
     background-color: rgba(white, 0.5);
-    box-shadow: 0, 12px 4px 4px rgba(0,0,0,0.18);
+    box-shadow:
+      0,
+      12px 4px 4px rgba(0, 0, 0, 0.18);
     backdrop-filter: blur(12px);
     justify-content: center;
     align-items: center;
@@ -20,7 +22,9 @@
     border-radius: 12px;
     gap: 20px;
     &:hover {
-      box-shadow: 0, 16px 12px 4px rgba(0,0,0,0.38);
+      box-shadow:
+        0,
+        16px 12px 4px rgba(0, 0, 0, 0.38);
     }
     & .button-container {
       align-items: center;

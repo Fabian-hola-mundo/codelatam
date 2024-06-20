@@ -17,9 +17,8 @@
     z-index: 2;
     animation-name: imageZoom;
     animation-duration: 1400ms;
-    box-shadow: 0 8px 12px 4px rgba(0,0,0,0.17);
+    box-shadow: 0 8px 12px 4px rgba(0, 0, 0, 0.17);
     transition: all 200ms ease-in-out;
-
   }
   & .phrase-container {
     height: 100%;
@@ -65,7 +64,7 @@
       height: 80px;
       border-radius: 100px;
       border: 3px solid black;
-      box-shadow: 0 12px 4px rgba(0,0,0,0.17);
+      box-shadow: 0 12px 4px rgba(0, 0, 0, 0.17);
       background-color: rgba(white, 0.5);
       backdrop-filter: blur(12px);
       object-fit: cover;
@@ -91,12 +90,10 @@
   }
 }
 
-
-
 @keyframes zoomin {
   0% {
-   opacity: 0;
-   transform: translateY(18px);
+    opacity: 0;
+    transform: translateY(18px);
   }
   100% {
     opacity: 1;

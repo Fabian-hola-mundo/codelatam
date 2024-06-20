@@ -5,6 +5,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
 import { DiapositiveService } from '../../../../services/diapositive.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'bel-nav',
@@ -49,15 +50,15 @@ import { DiapositiveService } from '../../../../services/diapositive.service';
           <div>
             <ul>
               @for (section of sections; track section; let i = $index) {
-              <li (click)="setDiapo(i)" role="navigation">
-                <div
-                  matRipple
-                  class="nav"
-                  [ngClass]="{ active: diapositiveNumber === i }"
-                >
-                  <h4>{{ section }}</h4>
-                </div>
-              </li>
+                <li (click)="setDiapo(i)" role="navigation">
+                  <div
+                    matRipple
+                    class="nav"
+                    [ngClass]="{ active: diapositiveNumber === i }"
+                  >
+                    <h4>{{ section }}</h4>
+                  </div>
+                </li>
               }
             </ul>
           </div>
@@ -67,16 +68,18 @@ import { DiapositiveService } from '../../../../services/diapositive.service';
   `,
 })
 export class NavComponent {
-  @ViewChild('audioPlayer', { static: true }) audioPlayer!: ElementRef<HTMLAudioElement>;
+  @ViewChild('audioPlayer', { static: true })
+  audioPlayer!: ElementRef<HTMLAudioElement>;
   diapositiveNumber?: any;
 
   sections: string[] = [
     'CODELATAM',
-    'CHALLENGES',
-    'OUR CHILDS',
-    'THE VISION',
-    'GOALS',
+    this.translate.instant('challengesVariant'),
+    this.translate.instant('ourChilds'),
+    this.translate.instant('vision'),
+    this.translate.instant('goals'),
   ];
+
   ngOnInit(): void {
     this.audioPlayer.nativeElement.volume = 0.1; // Ajusta el volumen
     this.diapoService.diapositiveNumber$.subscribe((number) => {
@@ -88,5 +91,8 @@ export class NavComponent {
     this.diapoService.setDiapositive(i);
   }
 
-  constructor(public diapoService: DiapositiveService) {}
+  constructor(
+    public diapoService: DiapositiveService,
+    private translate: TranslateService,
+  ) {}
 }

@@ -1,4 +1,4 @@
-:host{
+:host {
   .background {
     width: 100%;
     height: 100%;
@@ -30,7 +30,7 @@
       transform: translateX(1000px);
       background: linear-gradient(270deg, #000000 2.32%, #00000000 97.46%);
       & .h1 {
-        font-family: 'Bebas Neue', sans-serif;
+        font-family: "Bebas Neue", sans-serif;
         font-size: 100px;
         line-height: 100px;
         background: linear-gradient(110deg, #7890e6 2.32%, #8a37c9 97.46%);
@@ -50,16 +50,32 @@
             border: 1px solid rgba(white, 0.5);
             border-radius: 12px;
             &:nth-child(1) {
-              background: linear-gradient(270deg, #0b0744 2.32%, rgba(9, 18, 117, 0)100%);
+              background: linear-gradient(
+                270deg,
+                #0b0744 2.32%,
+                rgba(9, 18, 117, 0) 100%
+              );
             }
             &:nth-child(2) {
-              background: linear-gradient(270deg, #320744 2.32%, rgba(79, 9, 117, 0)100%);
+              background: linear-gradient(
+                270deg,
+                #320744 2.32%,
+                rgba(79, 9, 117, 0) 100%
+              );
             }
             &:nth-child(3) {
-              background: linear-gradient(270deg, #440730 2.32%, rgba(117, 9, 103, 0)100%);
+              background: linear-gradient(
+                270deg,
+                #440730 2.32%,
+                rgba(117, 9, 103, 0) 100%
+              );
             }
             &:nth-child(4) {
-              background: linear-gradient(270deg, #440707 2.32%, rgba(117, 9, 9, 0)100%);
+              background: linear-gradient(
+                270deg,
+                #440707 2.32%,
+                rgba(117, 9, 9, 0) 100%
+              );
             }
             & p {
               font-weight: lighter;
@@ -70,10 +86,8 @@
         }
       }
     }
-
   }
   &:hover {
-
     border-radius: 500px;
     & .background {
       & .back {
@@ -86,10 +100,9 @@
       & .text {
         transform: translateX(0px);
         & .h1 {
-          animation: zoomin 400ms ease-in-out ;
+          animation: zoomin 400ms ease-in-out;
           animation-delay: 500ms;
         }
-
       }
     }
   }
@@ -97,8 +110,8 @@
 
 @keyframes zoomin {
   0% {
-   opacity: 0;
-   transform: translateY(18px);
+    opacity: 0;
+    transform: translateY(18px);
   }
   100% {
     opacity: 1;

@@ -138,54 +138,53 @@ export const EDUCATION = {
 
 export const EDUCATION2 = [
   {
-    macroName: 'Schools Of Knowledge',
-    subItems : [
-      'Advanced Technical Training',
-      'Entrepreneurship And Innovation',
-      'Management And Leadership Skills',
-      'Business Culture And Professional Ethics',
-      'Global Competencies',
-      'Personal Development And Wellbeing',
-    ]
-  },
-  {
-    macroName: 'Schools Of Being',
-    subItems : [
-      'Soft Skills',
-      'Ethics And Social Responsibility',
-      'Personal Development And Wellbeing',
-      'Critical And Creative Thinking',
-      'Culture And Values',
-    ]
-  },
-  {
-    macroName: 'Schools Of Leveling',
+    macroName: 'schoolsKnowledge',
     subItems: [
-      'Mathematics',
-      'Reading And Comprehension',
-      'Writing And Communication',
-      'Sciences',
-      'Technology And Digital Literacy',
-      'Languages',
-      'Study And Learning Skills',
-      'Socio Emotional Skills',
-      'Vocational And Professional Guidance',
-      'Inclusion And Diversity',
-    ]
+      'schoolsKnowledgeItems.training',
+      'schoolsKnowledgeItems.innovation',
+      'schoolsKnowledgeItems.skills',
+      'schoolsKnowledgeItems.ethics',
+      'schoolsKnowledgeItems.competencies',
+      'schoolsKnowledgeItems.wellbeing',
+    ],
   },
   {
-    macroName: 'Complementary Services',
-    subItems : [
-      'Academic Guidance And Tutoring',
-      'Counseling And Psychological Support',
-      'Academic Leveling And Development',
-      'Technological Support And Educational Resources',
-      'Wellbeing And Health',
-      'Vocational And Professional Guidance',
-      'Financial Support',
-      'Entrepreneurship And Innovation Programs',
-      'Cultural And Social Activities',
-    ]
+    macroName: 'schoolsOfBeing',
+    subItems: [
+      'schoolsOfBeingItems.softSkills',
+      'schoolsOfBeingItems.responsibility',
+      'schoolsOfBeingItems.wellbeing',
+      'schoolsOfBeingItems.thinking',
+      'schoolsOfBeingItems.culture',
+    ],
   },
-
-]
+  {
+    macroName: 'schoolOfLeveling',
+    subItems: [
+      'schoolOfLevelingItems.mathematics',
+      'schoolOfLevelingItems.comprehension',
+      'schoolOfLevelingItems.communication',
+      'schoolOfLevelingItems.sciences',
+      'schoolOfLevelingItems.literacy',
+      'schoolOfLevelingItems.languages',
+      'schoolOfLevelingItems.learning',
+      'schoolOfLevelingItems.emotional',
+      'schoolOfLevelingItems.guidance',
+      'schoolOfLevelingItems.diversity',
+    ],
+  },
+  {
+    macroName: 'complementaryServices',
+    subItems: [
+      'complementaryServicesItems.tutoring',
+      'complementaryServicesItems.support',
+      'complementaryServicesItems.development',
+      'complementaryServicesItems.resources',
+      'complementaryServicesItems.health',
+      'complementaryServicesItems.guidance',
+      'complementaryServicesItems.financial',
+      'complementaryServicesItems.programs',
+      'complementaryServicesItems.activities',
+    ],
+  },
+];

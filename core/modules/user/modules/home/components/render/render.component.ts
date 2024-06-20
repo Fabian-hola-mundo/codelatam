@@ -27,7 +27,7 @@ export class RenderComponent implements OnInit {
       40,
       container.clientWidth / container.clientHeight,
       0.1,
-      1000
+      1000,
     );
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(container.clientWidth, container.clientHeight);
@@ -38,7 +38,7 @@ export class RenderComponent implements OnInit {
 
     camera.position.set(12, 15, 15);
     // Añadir luces a la escena
-/*     const light = new THREE.HemisphereLight(0xffffff, 0x444444, 0.3);
+    /*     const light = new THREE.HemisphereLight(0xffffff, 0x444444, 0.3);
     light.position.set(0, 20, 0);
     scene.add(light);
 
@@ -54,21 +54,21 @@ export class RenderComponent implements OnInit {
     dirLight.shadow.camera.far = 50; */
 
     // Añadir luz puntual (SpotLight)
-/*     const spotLight = new THREE.SpotLight(0xFF0000, 1, 10, 12, 1, 2); */
+    /*     const spotLight = new THREE.SpotLight(0xFF0000, 1, 10, 12, 1, 2); */
     /* spotLight.position.setX(3)
     spotLight.position.setY(3)
     spotLight.position.setZ(3) */
-/*     spotLight.position.set(-1,4,-1)
+    /*     spotLight.position.set(-1,4,-1)
     spotLight.shadow.mapSize.width = 600;
     spotLight.shadow.mapSize.height = 600;
     spotLight.shadow.camera.near = 0;
     spotLight.shadow.camera.far = 2;
     scene.add(spotLight); */
-/*
+    /*
     const rectLightHelper = new THREE.HemisphereLightHelper(light, 23, 'blue');
     spotLight.add(rectLightHelper); */
 
-/*     const width = 10;
+    /*     const width = 10;
     const height = 10;
     const intensity = 1;
 
@@ -97,7 +97,10 @@ export class RenderComponent implements OnInit {
 
     // Plano de suelo para recibir sombras
     const planeGeometry = new THREE.PlaneGeometry(2000, 2000);
-    const planeMaterial = new THREE.ShadowMaterial({ color: 'black', opacity: 0.2 });
+    const planeMaterial = new THREE.ShadowMaterial({
+      color: 'black',
+      opacity: 0.2,
+    });
     const plane = new THREE.Mesh(planeGeometry, planeMaterial);
     plane.rotation.x = -Math.PI / 2;
     plane.position.y = -1;
@@ -129,7 +132,7 @@ export class RenderComponent implements OnInit {
       undefined,
       (error) => {
         console.error(error);
-      }
+      },
     );
 
     // Función de animación

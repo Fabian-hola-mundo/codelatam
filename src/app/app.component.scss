@@ -1,0 +1,31 @@
+select {
+  width: 200px;
+  height: 35px;
+  background: white;
+  color: gray;
+  padding-left: 5px;
+  font-size: 14px;
+  border: none;
+  margin: 10px 0;
+
+  border-radius: 20px;
+  outline: none;
+
+  -webkit-appearance: none;  /* Remove default arrow */
+  -moz-appearance: none;     /* Remove default arrow */
+  appearance: none;          /* Remove default arrow */
+}
+
+select::-ms-expand {
+  display: none; /* Remove default arrow in IE */
+}
+
+select:hover {
+  color: black;
+  background: #f8f8f8;
+}
+
+select:focus {
+  color: black;
+  background: #f0f0f0;
+}

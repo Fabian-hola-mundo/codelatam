@@ -1,0 +1,85 @@
+{
+  "noWar": "Nada para la guerra",
+  "torEducation": "Por la educación",
+  "everything": "todo",
+
+  "ourChilds": "NUESTROS NIÑOS",
+  "goals": "METAS",
+  "challengesVariant": "RETOS",
+
+  "cardsViolenceTitle": "Violencia",
+  "cardsViolenceDepartment": "Nariño, Cauca, Chocó, Valle del Cauca, Bolívar, Norte de Santander, Risaralda, Magdalena, Córdoba, Putumayo, Arauca y Antioquia",
+  "cardsPovertyTitle": "Pobreza multidimensional",
+  "cardsPovertyDepartment": "Guajira, Vichada y Chocó entre los más pobres",
+  "cardsEducationTitle": "Bajo nivel educativo",
+  "cardsEducationDepartment": "Boyacá y Norte de Santander dentro de los departamentos con el menor nivel educativo",
+  "cardWeMustTitle": "Debemos cambiar todo Latam",
+  "forgeTitle": "Forjando el futuro tecnológico de América Latina",
+  "challenges": "Retos",
+
+  "vision": "VISIÓN",
+  "infrastructure": "INFRAESTRUCTURA",
+  "education": "EDUCACIÓN",
+  "marketing": "MARKETING",
+  "growth": "CRECIMIENTO",
+  "logistics": "LOGÍSTICA",
+
+  "classroom": "Aula",
+  "cafeteria": "Cafetería",
+  "dormitories": "Dormitorios",
+  "gymnasium": "Gimnasio",
+  "technologyLabs": "Laboratorios de Tecnología",
+  "mechatronicsLabs": "Laboratorios de Mecatrónica",
+  "greenAreas": "Áreas Verdes",
+  "lounge": "Salón",
+
+  "schoolsKnowledge": "Escuelas del conocimiento",
+  "schoolsKnowledgeItems": {
+    "training": "Formación Técnica Avanzada",
+    "innovation": "Entrepreneurship And Innovation",
+    "skills": "Habilidades de gestión y liderazgo",
+    "ethics": "Cultura empresarial y ética profesional",
+    "competencies": "Competencias globales",
+    "wellbeing": "Desarrollo personal y bienestar"
+  },
+
+  "schoolsOfBeing": "Escuelas del ser",
+  "schoolsOfBeingItems": {
+    "softSkills": "Habilidades blandas",
+    "responsibility": "Responsabilidad Ética y Social",
+    "wellbeing": "Bienestar y desarrollo personal",
+    "thinking": "Pensamiento crítico y creativo",
+    "culture": "Cultura y valores"
+  },
+
+  "schoolOfLeveling": "Escuela de Nivelación",
+  "schoolOfLevelingItems": {
+    "mathematics": "Matemáticas",
+    "comprehension": "Reading And Comprehension",
+    "communication": "Lectura y comprensión",
+    "sciences": "Ciencias",
+    "literacy": "Tecnología y alfabetización digital",
+    "languages": "Idiomas",
+    "learning": "Habilidades de estudio y aprendizaje",
+    "emotional": "Habilidades socioemocionales",
+    "guidance": "Orientación Vocacional Y Profesional",
+    "diversity": "Inclusión y diversidad"
+  },
+
+  "complementaryServices": "Servicios complementarios",
+  "complementaryServicesItems": {
+    "tutoring": "Tutoría y orientación académica",
+    "support": "Asesoramiento y apoyo psicológico",
+    "development": "Nivelación y desarrollo académico",
+    "resources": "Soporte Tecnológico Y Recursos Educativos",
+    "health": "Bienestar y Salud",
+    "guidance": "Orientación Vocacional Y Profesional",
+    "financial": "Soporte financiero",
+    "programs": "Programas de emprendimiento e innovación",
+    "activities": "Actividades culturales y sociales"
+  },
+
+  "goalEducation": "Educación tecnológica de calidad",
+  "goalMeasures": "Medir y mejorar el impacto socioeconómico",
+  "goalIndustry": "Establecer vínculos con la industria tecnológica"
+}

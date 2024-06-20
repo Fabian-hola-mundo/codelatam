@@ -1,4 +1,11 @@
-import { Component, ElementRef, OnInit, Renderer2, ViewChild, viewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  OnInit,
+  Renderer2,
+  ViewChild,
+  viewChild,
+} from '@angular/core';
 import { DiapositiveService } from '../../../../../../services/diapositive.service';
 import { CHILDSBACK, CHILDSFRONT } from '../../../../../../constants/childs';
 import { CommonModule } from '@angular/common';
@@ -10,10 +17,9 @@ import { MatRippleModule } from '@angular/material/core';
   standalone: true,
   imports: [CommonModule, MatRippleModule],
   templateUrl: './diapo3.component.html',
-  styleUrl: './diapo3.component.scss'
+  styleUrl: './diapo3.component.scss',
 })
 export class Diapo3Component implements OnInit {
-
   imagesBack = CHILDSBACK;
   imagesFront = CHILDSFRONT;
   phrases = PHRASES;
@@ -22,19 +28,16 @@ export class Diapo3Component implements OnInit {
   activePhrase?: string;
   private intervalId?: number;
   public currentIndex: number = 0;
-  inex = this.currentIndex
+  inex = this.currentIndex;
   @ViewChild('image') image!: ElementRef;
   bodyElement = this.renderer.selectRootElement('body', true);
 
   constructor(
-    private renderer : Renderer2,
-    private diapoService: DiapositiveService
-  ){
-
-  }
+    private renderer: Renderer2,
+    private diapoService: DiapositiveService,
+  ) {}
 
   ngOnInit(): void {
-
     // Inicializar la imagen activa
     this.activeImageBack = this.imagesBack[this.currentIndex];
     this.activeImageFront = this.imagesFront[this.currentIndex];
@@ -50,7 +53,7 @@ export class Diapo3Component implements OnInit {
     }, 7000);
 
     // Suscribirse a los cambios de diapositiveNumber$
-    this.diapoService.diapositiveNumber$.subscribe(diapoNumber => {
+    this.diapoService.diapositiveNumber$.subscribe((diapoNumber) => {
       if (diapoNumber === 2) {
         this.updateBackgroundImage(this.bodyElement);
       } else {
@@ -66,18 +69,21 @@ export class Diapo3Component implements OnInit {
     }
   }
 
-  changeIndex(i: any){
-    this.currentIndex = i
+  changeIndex(i: any) {
+    this.currentIndex = i;
     this.updateBackgroundImage(this.bodyElement);
   }
 
   private updateBackgroundImage(bodyElement: HTMLElement): void {
     if (this.activeImageBack) {
-      this.renderer.setStyle(bodyElement, 'background-image', `url(${this.activeImageBack})`);
+      this.renderer.setStyle(
+        bodyElement,
+        'background-image',
+        `url(${this.activeImageBack})`,
+      );
       this.renderer.setStyle(bodyElement, 'background-repeat', 'no-repeat');
       this.renderer.setStyle(bodyElement, 'background-size', '140%');
       this.renderer.setStyle(bodyElement, 'background-position', 'center');
     }
   }
-
 }
