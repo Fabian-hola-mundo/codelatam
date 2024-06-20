@@ -14,7 +14,6 @@ export const layutRoutes: Route[] = [
         pathMatch: 'full',
       },
       { path: '', redirectTo: '', pathMatch: 'full' },
-
     ],
   },
 ];

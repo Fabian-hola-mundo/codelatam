@@ -17,7 +17,7 @@
       flex-wrap: wrap;
       gap: 8px;
       & .education-data {
-        box-shadow: 0 4px 12px rgba(0,0,0,0.17);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.17);
         background-color: rgb(255, 255, 255);
         border-radius: 4px;
         padding: 12px;
@@ -27,7 +27,7 @@
         transition: all 200ms;
         &:hover {
           background-color: rgb(204, 204, 204);
-          box-shadow: 0 12px 12px rgba(0,0,0,0.27);
+          box-shadow: 0 12px 12px rgba(0, 0, 0, 0.27);
           transform: translateY(-12px);
         }
         &__sub-item {

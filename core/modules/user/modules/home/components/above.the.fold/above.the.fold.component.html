@@ -6,9 +6,7 @@
         <h3>Forging the Technological Future of Latin America</h3>
       </div>
 
-      <button mat-stroked-button (click)="nextDiapositive()">
-        Challenges
-      </button>
+      <button mat-stroked-button (click)="nextDiapositive()">Challenges</button>
     </div>
 
     <div class="diapo diapo-1" *ngIf="diapositive === 1">
@@ -36,11 +34,21 @@
       <div class="map">
         <div class="map__container">
           <ng-container *ngIf="cardOnDiapositive1">
-            <img class="skelet" [src]="cardOnDiapositive1.images?.[0]" *ngIf="cardOnDiapositive1.images?.[0]" alt="" />
-            <img class="over" [src]="cardOnDiapositive1.images?.[1]" *ngIf="cardOnDiapositive1.images?.[1]" alt="" />
+            <img
+              class="skelet"
+              [src]="cardOnDiapositive1.images?.[0]"
+              *ngIf="cardOnDiapositive1.images?.[0]"
+              alt=""
+            />
+            <img
+              class="over"
+              [src]="cardOnDiapositive1.images?.[1]"
+              *ngIf="cardOnDiapositive1.images?.[1]"
+              alt=""
+            />
           </ng-container>
           <ng-container *ngIf="!cardOnDiapositive1">
-            <img class="skelet" [src]="defaultImages[0]"  alt="" />
+            <img class="skelet" [src]="defaultImages[0]" alt="" />
             <img class="over" [src]="defaultImages[1]" alt="" />
           </ng-container>
         </div>

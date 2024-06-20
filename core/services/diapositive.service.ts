@@ -2,13 +2,13 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DiapositiveService {
   private diapositiveNumberSubject = new BehaviorSubject<number>(0);
   diapositiveNumber$ = this.diapositiveNumberSubject.asObservable();
 
-  constructor() { }
+  constructor() {}
 
   nextDiapositive() {
     const currentNumber = this.diapositiveNumberSubject.value;

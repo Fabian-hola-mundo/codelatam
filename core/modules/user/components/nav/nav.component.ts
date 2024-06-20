@@ -49,15 +49,15 @@ import { DiapositiveService } from '../../../../services/diapositive.service';
           <div>
             <ul>
               @for (section of sections; track section; let i = $index) {
-              <li (click)="setDiapo(i)" role="navigation">
-                <div
-                  matRipple
-                  class="nav"
-                  [ngClass]="{ active: diapositiveNumber === i }"
-                >
-                  <h4>{{ section }}</h4>
-                </div>
-              </li>
+                <li (click)="setDiapo(i)" role="navigation">
+                  <div
+                    matRipple
+                    class="nav"
+                    [ngClass]="{ active: diapositiveNumber === i }"
+                  >
+                    <h4>{{ section }}</h4>
+                  </div>
+                </li>
               }
             </ul>
           </div>
@@ -67,7 +67,8 @@ import { DiapositiveService } from '../../../../services/diapositive.service';
   `,
 })
 export class NavComponent {
-  @ViewChild('audioPlayer', { static: true }) audioPlayer!: ElementRef<HTMLAudioElement>;
+  @ViewChild('audioPlayer', { static: true })
+  audioPlayer!: ElementRef<HTMLAudioElement>;
   diapositiveNumber?: any;
 
   sections: string[] = [

@@ -6,10 +6,9 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './infrastructure.component.html',
-  styleUrls: ['./infrastructure.component.scss']
+  styleUrls: ['./infrastructure.component.scss'],
 })
 export class InfrastructureComponent {
-
   imageNumber: any = 0;
 
   images = [
@@ -37,5 +36,4 @@ export class InfrastructureComponent {
   public changeDiapo(i: any) {
     this.imageNumber = i;
   }
-
 }

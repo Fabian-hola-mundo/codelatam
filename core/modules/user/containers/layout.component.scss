@@ -1,4 +1,4 @@
-@import '../../../../src/styles.scss';
+@import "../../../../src/styles.scss";
 
 :host {
   display: flex;
@@ -19,14 +19,13 @@
       border-radius: 300px;
     }
     & .circle1 {
-      background-color: rgba(#FFCD00, 0.5);
+      background-color: rgba(#ffcd00, 0.5);
       bottom: -5%;
       left: -5%;
       animation-name: circle1;
       animation-duration: 20s;
       animation-iteration-count: infinite;
       animation-timing-function: ease-in-out;
-
     }
     & .circle2 {
       background-color: rgba(#003786, 0.6);
@@ -39,7 +38,7 @@
       animation-timing-function: ease-in-out;
     }
     & .circle3 {
-      background-color: rgba(#D13C46, 0.8);
+      background-color: rgba(#d13c46, 0.8);
       bottom: -5%;
       right: -5%;
       filter: blur(190px);
@@ -50,7 +49,6 @@
     }
   }
 }
-
 
 @keyframes circle1 {
   0% {

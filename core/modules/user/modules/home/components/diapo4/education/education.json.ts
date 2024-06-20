@@ -139,24 +139,24 @@ export const EDUCATION = {
 export const EDUCATION2 = [
   {
     macroName: 'Schools Of Knowledge',
-    subItems : [
+    subItems: [
       'Advanced Technical Training',
       'Entrepreneurship And Innovation',
       'Management And Leadership Skills',
       'Business Culture And Professional Ethics',
       'Global Competencies',
       'Personal Development And Wellbeing',
-    ]
+    ],
   },
   {
     macroName: 'Schools Of Being',
-    subItems : [
+    subItems: [
       'Soft Skills',
       'Ethics And Social Responsibility',
       'Personal Development And Wellbeing',
       'Critical And Creative Thinking',
       'Culture And Values',
-    ]
+    ],
   },
   {
     macroName: 'Schools Of Leveling',
@@ -171,11 +171,11 @@ export const EDUCATION2 = [
       'Socio Emotional Skills',
       'Vocational And Professional Guidance',
       'Inclusion And Diversity',
-    ]
+    ],
   },
   {
     macroName: 'Complementary Services',
-    subItems : [
+    subItems: [
       'Academic Guidance And Tutoring',
       'Counseling And Psychological Support',
       'Academic Leveling And Development',
@@ -185,7 +185,6 @@ export const EDUCATION2 = [
       'Financial Support',
       'Entrepreneurship And Innovation Programs',
       'Cultural And Social Activities',
-    ]
+    ],
   },
-
-]
+];

@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './diapo5.component.html',
-  styleUrl: './diapo5.component.scss'
+  styleUrl: './diapo5.component.scss',
 })
-export class Diapo5Component {
-
-}
+export class Diapo5Component {}

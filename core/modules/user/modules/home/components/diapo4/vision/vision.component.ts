@@ -8,7 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
   standalone: true,
   imports: [CommonModule, MatButtonModule, MatIconModule],
   templateUrl: './vision.component.html',
-  styleUrls: ['./vision.component.scss']
+  styleUrls: ['./vision.component.scss'],
 })
 export class VisionComponent {
   @Input() diapoStep = 0;
@@ -21,7 +21,7 @@ export class VisionComponent {
     'EDUCATION',
     'MARKETING',
     'GROWTH',
-    'LOGISTICS'
+    'LOGISTICS',
   ];
 
   changeDiapoStep(i: number) {

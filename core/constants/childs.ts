@@ -7,7 +7,7 @@ export const CHILDSBACK = [
   'assets/images/images/Guajira.jpg',
   'assets/images/images/Putumayo.jpg',
   'assets/images/images/Rolo.jpg',
-]
+];
 
 export const CHILDSFRONT = [
   'assets/images/images/Amazonas.png',
@@ -18,4 +18,4 @@ export const CHILDSFRONT = [
   'assets/images/images/Guajira.png',
   'assets/images/images/Putumayo.png',
   'assets/images/images/Rolo.png',
-]
+];
