@@ -28,7 +28,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./diapo4.component.scss'],
 })
 export class Diapo4Component {
-  diapo: number = 4;
+  diapo: number = 5;
 
   text = {
     noWar: this.translate.instant('noWar'),

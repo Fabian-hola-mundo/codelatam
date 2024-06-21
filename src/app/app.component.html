@@ -1,5 +1,8 @@
-<select [value]="selectedLang" (change)="switchLanguage($event)">
-  <option value="en">English</option>
-  <option value="es">Español</option>
-</select>
+<div class="lenguage" *ngIf="!disable">
+  <select [value]="selectedLang" (change)="switchLanguage($event)">
+    <option value="en">English</option>
+    <option value="es">Español</option>
+  </select>
+  <mat-icon matRipple (click)="disableLenguage()">close</mat-icon>
+</div>
 <router-outlet></router-outlet>

@@ -19,9 +19,9 @@ export class VisionComponent {
 
   buttons = [
     this.translate.instant('vision'),
-    this.translate.instant('infrastructure'),
-    'HR',
     this.translate.instant('education'),
+    'HR',
+    this.translate.instant('infrastructure'),
     this.translate.instant('marketing'),
     this.translate.instant('growth'),
     this.translate.instant('logistics'),
